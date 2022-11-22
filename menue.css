@@ -1,0 +1,85 @@
+.menuesection .menues {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.menuesection .menues .menue {
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: .2rem .2rem 1rem black;
+    border-radius: 5%;
+    overflow: hidden;
+
+}
+
+.menuesection .menues .menue .image {
+    width: 12rem;
+    height: 10rem;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.menuesection .menues .menue .image img {
+    margin: 1.5rem 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.menuesection .menues .menue h1 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 980px) {
+    .menuesection .menues {
+
+        justify-content: space-between;
+    }
+
+    .menuesection .menues .menue .image {
+        width: 14rem;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .menuesection .menues {
+
+        justify-content: space-around;
+    }
+
+    .menuesection .menues .menue .image {
+        width: 19rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 790px) {
+
+    .menuesection .menues .menue .image {
+        width: 16rem;
+    }
+
+}
+
+@media only screen and (max-width: 625px) {
+    .menuesection .menues .menue .image {
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .menuesection .menues .menue .image {
+        width: 16rem;
+    }
+
+    .menuesection .hedding {
+        font-size: 2.5rem;
+    }
+}

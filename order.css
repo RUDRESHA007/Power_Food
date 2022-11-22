@@ -1,0 +1,68 @@
+.order_section .orders{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+
+}
+.order_section .orders .order{
+    width: 100%;
+    height: 22rem;
+    overflow: hidden;
+    position: relative;
+
+}
+.order_section .orders .order .image{
+    width: 100%;
+    height: 100%;
+}
+.order_section .orders .order .image img{
+    width: 100%;
+    height: 100%;
+}   
+.order_section .orders .order .details{
+    position: absolute;
+    top: -100rem;
+    height: 100%;
+
+    text-align: center;
+    padding: 3rem;
+    transition: .8s ease;
+    color: white;
+    background-color: rgba(41, 36, 36, 0.377);
+}
+.order_section .orders .order:hover .details{
+    top: 0;
+
+}
+
+.order_section .orders .order .details h1{
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.order_section .orders .order .details p{
+    text-align:start;
+    font-size: 1.2rem;
+}
+@media only screen and (max-width: 845px) {
+    .order_section .orders{
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width: 845px) {
+
+    .order_section .orders .order{
+        width: 100%;
+        height:28rem;
+}
+}
+
+@media only screen and (max-width: 475px) {
+    .order_section .hedding{
+        font-size: 2.5rem;
+    }
+   
+
+}

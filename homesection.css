@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Tourney:ital,wght@1,100&display=swap');
+
+
+
+#homesection{
+    margin-top:60px;
+    padding: 40px 0 40px  0;
+    background-color:#393939;
+    position: relative;
+
+
+
+}
+.powerfood_theam{
+    position: relative;
+
+    display: grid;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 3px 40px 3px 40px;
+    background-color: #e1bd93;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%,0 0);
+
+
+}
+.home img{
+
+    width: 100%;
+    height: auto;
+border-radius: 20px;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%,0 0);
+
+
+}
+.home .detiles{
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 20px;
+    
+}
+ .home .detiles h1{
+     position: relative;
+    font-size:60px;
+    color: rgb(236, 240, 239);
+    font-family: 'Audiowide', cursive;
+    top: 0;
+    /* font-family: 'Monoton', cursive; */
+line-height: 100px;
+
+}
+.home .detiles h1 span{
+    color: red;
+    font-family: 'Audiowide', cursive;
+
+}
+
+
+.home .detiles p{
+    font-size: 35px;
+
+    font-family: 'Tourney', cursive;
+    color: rgb(247, 242, 242);
+    text-shadow: 4px 6px 1px #000;
+ 
+
+} 
+
+@media(max-width: 550px) and (min-width:433px) {
+    .container1{
+        padding: 50px;
+    }
+    .home img{
+        overflow: hidden;
+    }
+    .home .detiles p{
+    
+        font-size: 28px;
+
+
+}
+.home .detiles h1{
+    line-height:60px;
+
+    font-size:45px;
+
+
+}
+}
+
+
+@media(max-width: 410px) and (min-width:0px) {
+    .home .detiles h1{
+    
+        font-size:40px;
+        line-height: 50px;
+    
+    
+    }
+
+    .home .detiles p{
+       
+        font-size: 25px;
+
+
+}
+}

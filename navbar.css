@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbox {
+    background-color: #e4a94a;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+
+}
+
+.navbar {
+    display: flex;
+
+
+}
+
+.navbar .logo {
+    position: relative;
+    display: block;
+    width: 10rem;
+    left: 0;
+    /* background-color: #fff; */
+    height: 4rem;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+
+}
+
+.navbar .logo h1 {
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Black Ops One', cursive;
+width: 100%;
+    top: 0;
+}
+
+.navbar .logo p {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    font-family: 'Herr Von Muellerhoff', cursive;
+
+
+}
+
+.navbar .navlists {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+
+
+}
+
+
+.navbar .navlists a {
+    font-size: 1.1rem;
+    padding: .5rem;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    right: 3rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    transition: .4s ease-in;
+}
+
+.navbar .navlists a:hover {
+    background-color: rgba(248, 252, 16, 0.678);
+    color: rgb(2, 1, 1);
+
+}
+
+
+.navbar .navlists .icons{
+    display: none;
+}
+
+#toggles {
+    display: none;
+    z-index: 8;
+
+}
+
+.toggles {
+
+    position: fixed;
+    right: 3rem;
+    top: 0rem;
+    font-size: 50px;
+    color: red;
+
+
+}
+
+.toggles #show, #hide {
+    position: absolute;
+
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .navbar .navlists a {
+        font-size: 1rem;
+
+        padding: .45rem;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .navbar .navlists {
+        font-size: .8rem;
+
+        padding: .35rem;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    .navbar .navlists {
+        font-size: .7rem;
+
+        padding: .25rem;
+    }
+}
+
+
+
+
+
+/* media query for toggle section  */
+
+
+@media only screen and (max-width: 760px) {
+
+    .navbar .navlists {
+        display: none;
+
+    }
+    
+
+
+    .navbar .navlists .icons{
+        display: block;
+    }
+
+
+    .navbar .navlists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(78, 72, 72);
+        width: 18rem;
+        height: 20rem;
+        position: absolute;
+        padding: .5rem;
+        right:-100rem;
+        gap: 1rem;
+        transition: .5s ease;
+
+
+    }
+
+    .navbar .navlists a {
+        position: relative;
+        text-align: center;
+        width: 50%;
+        right: 0;
+        top: 1rem;
+        padding: .5rem;
+
+    }
+        /* toggle buttons */
+
+
+    #toggles {
+        display: block;
+
+    }
+
+    .toggles #show {
+
+        visibility: visible;
+
+    }
+
+    .toggles #hide {
+        visibility: hidden;
+
+    }
+
+
+ 
+
+
+
+}
